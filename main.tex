@@ -1,0 +1,630 @@
+\documentclass[11pt]{beamer}
+\usetheme{Boadilla}
+\usepackage[utf8]{inputenc}
+\usepackage[danish]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{pgfplots}
+\usepackage{tikz}
+
+\definecolor{UBCblue}{rgb}{0.95, 0.0, 0.1}
+
+%\useoutertheme{miniframes} % Alternatively: miniframes, infolines, split
+\useinnertheme{circles}
+\usecolortheme[named=UBCblue]{structure}
+
+\author{}
+\title{Julesange 2019}
+%\setbeamercovered{transparent} 
+%\setbeamertemplate{navigation symbols}{} 
+%\logo{} 
+%\institute{} 
+\date{24. december 2019} 
+%\subject{} 
+
+\makeatother
+\setbeamertemplate{footline}
+{
+  \leavevmode%
+  \hbox{%
+  \begin{beamercolorbox}[wd=.4\paperwidth,ht=2.25ex,dp=1ex,center]{author in head/foot}%
+    \usebeamerfont{author in head/foot}\insertshorttitle
+  \end{beamercolorbox}%
+  \begin{beamercolorbox}[wd=.45\paperwidth,ht=2.25ex,dp=1ex,center]{title in head/foot}%
+    \usebeamerfont{title in head/foot}\insertsection
+  \end{beamercolorbox}
+  \begin{beamercolorbox}[wd=.15\paperwidth,ht=2.25ex,dp=1ex,center]{title in head/foot}%
+    \usebeamerfont{title in head/foot}
+    \insertframenumber{} / \inserttotalframenumber\hspace*{1ex}
+  \end{beamercolorbox}}
+  \vskip0pt%
+}
+\makeatletter
+\setbeamertemplate{navigation symbols}{}
+
+\makeatletter
+\ifbeamer@notesnormals%
+    \beamer@paperwidth 16.00cm%
+    \beamer@paperheight 9.00cm%
+    \geometry{papersize={\beamer@paperwidth,\beamer@paperheight}}
+\fi%
+\makeatother
+
+
+\AtBeginSection[]{
+  \begin{frame}
+  \vfill
+  \centering
+  %\begin{beamercolorbox}[sep=8pt,center,shadow=true,rounded=true]{title}
+  \begin{Huge}
+    \insertsectionhead\par%
+  \end{Huge}
+  %\end{beamercolorbox}
+  \vfill
+  \end{frame}
+}
+
+
+\begin{document}
+
+\begin{frame}
+\titlepage
+\end{frame}
+
+%\begin{frame}
+%\tableofcontents
+%\end{frame}
+
+
+
+
+\newcommand{\xmastree}{\begin{tikzpicture}
+\begin{axis}[
+    hide axis, clip=false,
+    y domain=0:2*pi,
+    samples=30,axis equal, view={65}{20}]
+\addplot3 [domain=0:4,surf,shader=flat,z buffer=sort,fill=green!50!brown, draw=green!50!black, line join=bevel] 
+    ({(1.3*x-floor(x))*x^0.5*cos(deg(y))},
+     {(1.3*x-floor(x))*x^0.5*sin(deg(y))},
+     {-5*x});
+\addplot3 [domain=0:4.5, samples=10, samples y=0, fill=yellow!85!red, draw=yellow!55!red] ({0},{sin(x/5*360) * (1 - x + floor(x)) },{cos(x/5*360) * (1 - x + floor(x) )  + 0.5}) -- cycle;
+\end{axis}
+\end{tikzpicture}}
+
+\newcommand{\toc}{\begin{frame}{Sangoversigt}
+\begin{columns}
+	\begin{column}{0.05\textwidth}
+	   %test
+	\end{column}
+	\begin{large}
+		\begin{column}{0.65\textwidth}
+    	    \tableofcontents
+    	\end{column}
+
+	\end{large}
+    
+    \begin{column}{0.30\textwidth}
+    	\begin{center}
+    		%\xmastree
+    	\end{center}
+    \end{column}
+\end{columns}
+
+
+
+\end{frame}}
+
+%\begin{frame}
+%\xmastree
+%\end{frame}
+
+\toc
+
+\section{Lille Messias}
+\huge
+\center
+\begin{frame}
+En stjerne på himlen
+
+Og flere og flere
+
+I nat føder himlen
+
+Med jordiske veer
+
+I nat lover himlen
+
+At den vil befri os
+
+Maria på æslet
+
+Med lille Messias
+\end{frame}
+
+\begin{frame}
+Maria skal føde
+
+Sin glæde med smerte
+
+Der banker et hjerte
+
+Bag vinterens hjerte
+
+Selv kulden og mørket
+
+Har håb de vil gi os
+
+Maria på æslet
+
+Med lille Messias
+\end{frame}
+
+\begin{frame}
+I nat ruger himlen
+
+På glæden og freden
+
+Så varsomt i mørket
+
+Som fuglen i reden
+
+Og freden og glæden
+
+Nu fødes de i os
+
+Maria på æslet
+
+Med lille Messias
+\end{frame}
+
+\begin{frame}
+I fødslen er glæden
+
+Forbundet med smerten
+
+Dog aldrig var glæden
+
+Så hjemløs i verden
+
+Men stalden og krybben
+
+Er tegn som skal si' os
+
+Maria fandt plads
+
+Da hun fødte Messias
+\end{frame}
+
+\toc
+
+\section{En rose så jeg skyde}
+\begin{frame}
+En rose så jeg skyde
+
+op af den frosne jord
+
+alt som os fordum spåde
+
+profetens trøsteord.
+
+Den rose spired frem
+
+midt i den kolde vinter
+
+om nat ved Betlehem.
+\end{frame}
+
+\begin{frame}
+Den rose fin og lille
+
+har dejlig duft og skær;
+
+den lyse for os ville
+
+og sprede mørket her;
+
+i sandhed mand og Gud
+
+af syndens nød og pine
+
+han nådig hjalp os ud.
+\end{frame}
+
+\begin{frame}
+For rosen nu jeg kvæder
+
+omkap med himlens hær:
+
+en jomfru var hans moder,
+
+Maria ren og skær.
+
+I ham brød lyset frem
+
+midt i den mørke vinter
+
+om nat ved Betlehem.
+\end{frame}
+\toc
+
+\section{Dejlig er jorden}
+\begin{frame}
+Dejlig er jorden,
+
+prægtig er Guds himmel,
+
+skøn er sjælenes pilgrimsgang!
+
+Gennem de fagre
+
+riger på jorden
+
+gå vi til paradis med sang!
+\end{frame}
+
+\begin{frame}
+Tider skal komme,
+
+tider skal henrulle,
+
+slægt skal følge slægters gang.
+
+Aldrig forstummer
+
+tonen fra himlen
+
+i sjælens glade pilgrimssang.
+\end{frame}
+
+\begin{frame}
+Englene sang den
+
+først for markens hyrder,
+
+skønt fra sjæl til sjæl det lød:
+
+Fred over jorden!
+
+Menneske, fryd dig,
+
+os er en evig frelser fød! 
+\end{frame}
+\toc
+
+\section{På loftet sidder nissen}
+\begin{frame}
+
+På loftet sidder nissen med sin julegrød,
+
+sin julegrød, så god og sød,
+
+han nikker, og han spiser, og han er så glad
+
+for julegrød er hans bedste mad.
+
+Men rundt omkring står alle de små rotter,
+
+og de skotter, og de skotter:
+
+''Vi vil så gerne ha' lidt julegodter,''
+
+og de danser, danser rundt i ring.
+\end{frame}
+
+\begin{frame}
+Men nissefar han truer med sin store ske:
+
+''Vil I nu se at kom' af sted,
+for jeg vil ha' min julegrød i ro og fred,
+og ingen, ingen vil jeg dele med.''
+
+Men rotterne de hopper, og de danser,
+
+og de svinser, og de svanser,
+
+de kikker efter grøden, og de standser,
+
+og de står om nissen tæt i ring.
+\end{frame}
+
+\begin{frame}
+Men nissefar han er en lille hidsigprop,
+
+og med sin krop han gør et hop:
+
+''Jeg henter katten, hvis I ikke holder op,
+når katten kommer, skal det nok bli' stop.''
+
+Så bliver alle rotterne så bange,
+
+åh, så bange, åh, så bange,
+
+de vender sig og danser et par gange,
+
+og en, to, tre, så er de væk! 
+\end{frame}
+
+\toc
+
+\section{Der bor en lille nissemand}
+\begin{frame}
+Der bor en lille nissemand
+
+på loftets mørke rum, bummelum.
+
+Der bor en lille nissemand
+
+på loftets mørke rum.
+
+Han stamper rundt, han tramper rundt,
+
+han spiser grød, for det er sundt.
+
+Der bor en lille nissemand
+
+på loftets mørke rum.
+\end{frame}
+
+\toc
+
+\section{Fire strømper uden fod}
+\begin{frame}
+Fire strømper uden fod,
+
+en tomat så rød som blod
+
+og en gammel gulerod
+
+ka’ du få for en krone
+\end{frame}
+
+\begin{frame}
+Sørøver Olsens sorte kat,
+
+og en lille pakke vat,
+
+og den hemmelige skat
+
+ka’ du få for en krone.
+\end{frame}
+
+\begin{frame}
+Et par vanter, som er blå,
+
+og en bøf med peber på
+
+og halvanden dameskrå
+
+ka’ du få for en krone.
+\end{frame}
+
+\begin{frame}
+Knæk og bræk med skrin og spæk,
+
+syv kartofler i en sæk
+
+og et blækhus uden blæk
+
+ka’ du få for en krone.
+\end{frame}
+
+\begin{frame}
+Kalles lysegrønne flag
+
+og et drops med hindbærsmag
+
+og en revnet buksebag
+
+ka’ du få for en krone.
+\end{frame}
+
+\toc
+
+\section{Den himmelblå}
+\begin{frame}
+Se, der' den nye julemand
+
+Mon han har klejner med?
+
+Han vinker til os fra sit rensdyrspand
+
+Mens han flyver afsted
+\end{frame}
+
+\begin{frame}
+Jesus bli'r født på anden sal
+
+I Magasin du Nord
+
+Han griner, når du trykker på en fodpedal
+
+Si'r goddag til sin mor
+\end{frame}
+
+% Begin chorus
+\begin{frame}
+Nu' det jul, og træet tændes påny
+Nu' det jul i land og by
+Og guds engle små klæ'r sig festligt på
+I den himmelblå
+\end{frame}
+\begin{frame}
+Nu' det jul, og træet tændes påny
+Nu' det jul i land og by
+Og guds engle små klæ'r sig festligt på
+Og synger i sky
+\end{frame}
+% End chorus
+
+\begin{frame}
+Familien er samlet fra nær og fjern
+Synet er pyntet med vat
+Og udenfor lyser den ledestjerne
+I en smuk julenat
+\end{frame}
+
+% Begin chorus
+\begin{frame}
+Nu' det jul, og træet tændes påny
+Nu' det jul i land og by
+Og guds engle små klæ'r sig festligt på
+I den himmelblå
+\end{frame}
+\begin{frame}
+Nu' det jul, og træet tændes påny
+Nu' det jul i land og by
+Og guds engle små klæ'r sig festligt på
+Og synger i sky
+\end{frame}
+% End chorus
+
+\toc
+\section{O Come, All Ye Faithfull}
+\begin{frame}
+O come, all ye faithful
+
+Joyful and triumphant
+
+O come ye, o come ye to Bethlehem
+
+Come and behold Him
+
+Born the King of Angels!
+\end{frame}
+
+\begin{frame}
+O come, let us adore Him
+
+O come, let us adore Him
+
+O come, let us adore Him
+
+Christ the Lord
+\end{frame}
+
+\begin{frame}
+Oh, sing, choirs of angels
+
+Sing in exultation
+
+Oh, come, oh come ye to Bethlehem
+
+Come and behold Him
+
+Born the King of Angels
+\end{frame}
+
+\begin{frame}
+O come, let us adore Him
+
+O come, let us adore Him
+
+O come, let us adore Him
+
+Christ the Lord
+\end{frame}
+
+\toc
+
+\section{Mary's Boy Child}
+\begin{frame}
+Long time ago in Bethlehem,
+
+so the Holy Bible said
+
+Mary's boy child Jesus Christ,
+
+was born on Christmas Day
+\end{frame}
+
+\begin{frame}
+Hark, now hear the angels sing,
+
+a king was born today
+
+And man will live for evermore,
+
+because of Christmas Day
+
+Mary's boy child Jesus Christ,
+
+was born on Christmas Day
+\end{frame}
+
+\begin{frame}
+While shepherds watch their flocks by night
+
+They see a bright new shining star
+
+They hear a choir sing a song,
+
+the music seemed to come from afar
+\end{frame}
+
+\begin{frame}
+Hark, now hear the angels sing,
+
+a king was born today
+
+And man will live for evermore,
+
+because of Christmas Day
+
+Mary's boy child Jesus Christ,
+
+was born on Christmas Day
+\end{frame}
+
+\begin{frame}
+When Josef and his wife Mary,
+
+came to Bethlehem that night.
+
+They found no place to birth a child,
+
+not a single room was in sight.
+\end{frame}
+
+\begin{frame}
+Hark, now hear the angels sing,
+
+a king was born today
+
+And man will live for evermore,
+
+because of Christmas Day
+
+Mary's boy child Jesus Christ,
+
+was born on Christmas Day
+\end{frame}
+
+\begin{frame}
+At last they found a little nook,
+
+in a stable all forlorn.
+
+And in a manger cold and dark,
+
+Marys little boy was born.
+\end{frame}
+
+\begin{frame}
+Hark, now hear the angels sing,
+
+a king was born today
+
+And man will live for evermore,
+
+because of Christmas Day
+
+Mary's boy child Jesus Christ,
+
+was born on Christmas Day
+\end{frame}
+
+\toc
+
+\end{document}
